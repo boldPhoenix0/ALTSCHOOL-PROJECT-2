@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.AltSchool-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border: 2px solid #888;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #072788dd;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+th {
+    background-color: #2b5f4a;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Alternating row colors */
+tr.group1 {
+    background-color: #e0e0e0;
+}
+
+tr.group2 {
+    background-color: #f5f5f5;
+}
+
+tr.group3 {
+    background-color: #e0e0e0;
+}
+
+
+
+/* Navigation menu styling */
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-top: 2px solid #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f2369;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .AltSchool-logo img {
+        width: 80px;
+    }
+    
+    .table-container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    caption {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .AltSchool-logo img {
+        width: 60px; /* Smaller logo for mobile devices */
+    }
+
+    .table-container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    caption {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+}
